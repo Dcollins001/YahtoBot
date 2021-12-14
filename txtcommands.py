@@ -11,12 +11,37 @@ class txtcommands(commands.Cog):
 
   @commands.command()
   async def listcommands(self,ctx):
-    cmds = {'listcommands\tLists commands', 'rng x y\tGives random number between x and y', 'flipacoin\tFlips a coin', 'peensize\tshows everyone your dick size', 'inspire\tGenerates a Random inspirational quote', 'insult\tGenerates a Random insult', 'yt [youtube url]\tPlays youtube video', 'disconnect\tleaves voice channel', 'pause\tPauses audio', 'resume\tResumes audio', 'purge x\t[Admin only] Deletes x amount of messages', 'stop\tStops playing audio'}
-    printer = "```\nCommand list: (Be sure to add ^ before all)\n"
-    for command in cmds:
-      printer += command + "\n"
-    printer += "```"
-    await ctx.channel.send(printer)
+    cmds = {1: ["listcommands", "Lists commands"],
+    2: ["rng x y", "Gives random number between x and y"],
+    3: ["flipacoin", "Flips a coin"],
+    4: ["peensize", "Shows everyone your dick size"],
+    5: ["inspire", "Generates a random inspirational quote"],
+    6: ["insult", "Generates a random insult"],
+    7: ["yt [youtube url]", "Plays youtube video"], 
+    8: ["disconnect", "Removes the bot from the voice channel"],
+    9: ["pause", "Pauses youtube video"], 
+    10: ["resume", "Resumes youtube video"],
+    11: ["stop", "Stops playing youtube video"]}
+    returner = "{:<15}---------{:25}".format('Command', 'Use(remember ^prefix)') + "\n"
+    for i, j in cmds.items():
+        command, use = j
+        returner += "{:<15}---------{:25}".format(command, use) + "\n"
+    returner += "\n\nAdmin only commands below\n"
+    returner += "{:<15}---------{:25}".format('Command', 'Use(remember ^prefix)') + "\n"
+    admincmds = {1: ["purge x", "Deletes x amount of messages"],
+    2: ["createrolereactor [emote] [role] [message]", "Creates a message that allows for role reactions. Does not work with server emotes, only global ones"],
+    3: ["addrolereaction [emote] [role] [message]", "Adds a role reaction to a previously created role reactor"],
+    4: ["removerolereaction [emote] [role]", "Removes role reaction from a previously created role reactor"],
+    5: ["removerolereactor", "Deletes a previously created role reactor (PLEASE USE THIS. DO NOT MANUALLY DELETE A ROLE REACTOR)"]
+    }
+
+    for k, l in admincmds.items():
+        command, use = l
+        returner += "{:<15}---------{:25}".format(command, use) + "\n"
+    emb = discord.Embed(description=returner)
+    await ctx.channel.send(embed=emb)
+  
+  
 
   @commands.command()
   async def flipacoin(self,ctx):

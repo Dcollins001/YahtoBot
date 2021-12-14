@@ -1,8 +1,92 @@
 [
     {
-        "role_name": "testrole",
-        "role_id": 920044648179847268,
-        "emoji": "\ud83d\udd2b",
-        "message_id": 920045121666445382
+        "role_name": "Warzone",
+        "role_id": 920433667782901781,
+        "emote": "\ud83e\ude82",
+        "msgid": 920436424896020550,
+        "isreactor": "yes",
+        "serverid": 444656350258135081,
+        "channelid": 920429814190575706
+    },
+    {
+        "role_name": "CSGO",
+        "role_id": 836424980740309042,
+        "emote": "\ud83d\udd2b",
+        "msgid": 920436424896020550,
+        "isreactor": "no",
+        "serverid": 444656350258135081,
+        "channelid": 920429814190575706
+    },
+    {
+        "role_name": "Fighting games",
+        "role_id": 920430237718822943,
+        "emote": "\ud83d\udc4a",
+        "msgid": 920436424896020550,
+        "isreactor": "no",
+        "serverid": 444656350258135081,
+        "channelid": 920429814190575706
+    },
+    {
+        "role_name": "Sus",
+        "role_id": 920436769760088074,
+        "emote": "\ud83d\ude08",
+        "msgid": 920436424896020550,
+        "isreactor": "no",
+        "serverid": 444656350258135081,
+        "channelid": 920429814190575706
+    },
+    {
+        "role_name": "Phasma",
+        "role_id": 897993544688611369,
+        "emote": "\ud83d\udc7b",
+        "msgid": 920436424896020550,
+        "isreactor": "no",
+        "serverid": 444656350258135081,
+        "channelid": 920429814190575706
+    },
+    {
+        "role_name": "Jackbox",
+        "role_id": 920437885113622539,
+        "emote": "\u2611\ufe0f",
+        "msgid": 920436424896020550,
+        "isreactor": "no",
+        "serverid": 444656350258135081,
+        "channelid": 920429814190575706
+    },
+    {
+        "role_name": "Stardew valley",
+        "role_id": 920438601416867890,
+        "emote": "\u2b50",
+        "msgid": 920436424896020550,
+        "isreactor": "no",
+        "serverid": 444656350258135081,
+        "channelid": 920429814190575706
+    },
+    {
+        "role_name": "micheal",
+        "role_id": 920439163747188776,
+        "emote": "\ud83e\udd13",
+        "msgid": 920436424896020550,
+        "isreactor": "no",
+        "serverid": 444656350258135081,
+        "channelid": 920429814190575706
+    },
+    {
+        "role_name": "BTD6",
+        "role_id": 920441017000411196,
+        "emote": "\ud83c\udf88",
+        "msgid": 920436424896020550,
+        "isreactor": "no",
+        "serverid": 444656350258135081,
+        "channelid": 920429814190575706
+    },
+    {
+        "role_name": "Movie night",
+        "role_id": 920441367564521563,
+        "emote": "\ud83c\udfa5",
+        "msgid": 920436424896020550,
+        "isreactor": "no",
+        "serverid": 444656350258135081,
+        "channelid": 920429814190575706
     }
 ]
